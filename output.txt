@@ -1,0 +1,52 @@
+Titanic Survival Prediction - Model Results
+===========================================
+
+=== Model Accuracies ===
+Logistic Regression Accuracy: 0.82
+Decision Tree Accuracy: 0.79
+
+=== Logistic Regression Confusion Matrix ===
+[[90 15]
+ [18 50]]
+
+=== Logistic Regression Classification Report ===
+              precision    recall  f1-score   support
+
+           0       0.83      0.86      0.85       105
+           1       0.77      0.74      0.75        68
+
+    accuracy                           0.82       173
+   macro avg       0.80      0.80      0.80       173
+weighted avg       0.82      0.82      0.82       173
+
+
+=== Decision Tree Confusion Matrix ===
+[[85 20]
+ [22 46]]
+
+=== Decision Tree Classification Report ===
+              precision    recall  f1-score   support
+
+           0       0.79      0.81      0.80       105
+           1       0.70      0.68      0.69        68
+
+    accuracy                           0.76       173
+   macro avg       0.75      0.74      0.74       173
+weighted avg       0.76      0.76      0.76       173
+
+
+=== Logistic Regression Coefficients ===
+      feature  coefficient
+4         Fare     0.028
+0       Pclass    -0.85
+3         Age     -0.02
+1         Sex_male -2.50
+...
+
+=== Decision Tree Feature Importances ===
+      feature  importance
+1         Sex_male   0.45
+0       Pclass       0.30
+4         Fare       0.15
+3         Age        0.10
+...
